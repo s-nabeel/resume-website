@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+.Container {
+  justify-content: right;
+  display: flex;
+  padding: 1.5625rem 0.3125rem; /* 25px 5px */
+  color: #f5f6fa;
+  z-index: 999;
+}
+
+.Container p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.Social {
+  color: #dcdde1;
+  font-size: 1.375rem; /* 22px */
+  text-decoration: none;
+}
+
+.Container ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.Container li {
+  display: inline;
+  margin-right: 1.5625rem; /* 25px */
+}
+
+.Email {
+  border: 0.125rem solid #ff9aa2;
+  border-radius: 3.125rem; /* 50px */
+  background-color: transparent;
+  align-items: center;
+  box-sizing: border-box;
+  color: #ff9aa2;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 999;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.Email:hover {
+  box-shadow: #ff9aa2 0 0 0 0.1875rem, transparent 0 0 0 0; /* 3px */
+}
