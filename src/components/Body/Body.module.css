@@ -12,6 +12,18 @@
   color: #f5f6fa;
   text-align: left;
   font-size: 1.375rem;
+  animation: introFade ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes introFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .Container .Name {
@@ -23,6 +35,27 @@
   color: #ff9aa2;
   letter-spacing: 7px;
   margin: 0;
+  animation: nameFade ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nameFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nameFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .Container .AboutMe {
@@ -31,6 +64,33 @@
   text-align: left;
   font-weight: bold;
   line-height: 2.0625rem;
+  animation: aboutMeFade ease 2.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aboutMeFade {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes aboutMeFade {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .Container .AboutMe span {

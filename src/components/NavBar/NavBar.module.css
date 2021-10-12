@@ -4,9 +4,36 @@
 .Container {
   justify-content: right;
   display: flex;
-  padding: 1.5625rem 0.3125rem; /* 25px 5px */
+  padding: 1.5625rem 0.3125rem;
   color: #f5f6fa;
   z-index: 999;
+  animation: navBarfade ease 2.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navBarfade {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes navBarfade {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .Container p {
@@ -15,8 +42,27 @@
 
 .Social {
   color: #dcdde1;
-  font-size: 1.375rem; /* 22px */
+  font-size: 1.375rem;
   text-decoration: none;
+}
+
+.Social:hover,
+.Social:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.Social:hover {
+  transform: translateY(-1px);
+}
+
+.Social:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
 }
 
 .Container ul {
@@ -29,12 +75,12 @@
 
 .Container li {
   display: inline;
-  margin-right: 1.5625rem; /* 25px */
+  margin-right: 1.5625rem;
 }
 
 .Email {
   border: 0.125rem solid #ff9aa2;
-  border-radius: 3.125rem; /* 50px */
+  border-radius: 3.125rem;
   background-color: transparent;
   align-items: center;
   box-sizing: border-box;
@@ -59,5 +105,5 @@
 }
 
 .Email:hover {
-  box-shadow: #ff9aa2 0 0 0 0.1875rem, transparent 0 0 0 0; /* 3px */
+  box-shadow: #ff9aa2 0 0 0 0.1875rem, transparent 0 0 0 0;
 }

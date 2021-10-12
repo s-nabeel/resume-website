@@ -6,12 +6,15 @@ import { init } from "ityped";
 const Body = () => {
   const textRef = useRef();
   useEffect(() => {
-    init(textRef.current, {
-      showCursor: false,
-      typeSpeed: 120,
-      loop: false,
-      strings: ["Nabeel."],
-    });
+    const play = setTimeout(() => {
+      init(textRef.current, {
+        showCursor: false,
+        typeSpeed: 120,
+        loop: false,
+        strings: ["Nabeel."],
+      });
+    }, 850);
+    return () => clearTimeout(play);
   }, []);
   return (
     <div className={classes.Container}>
